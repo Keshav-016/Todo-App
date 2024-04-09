@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo-app</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <section class=" d-flex  justify-content-center">
+        <div class=" mx-auto mt-md-5 content_container p-5 border">
+            <div class="fixed-section">
+                <h1 class="mb-5 text-center">Todo-app</h1>
+                <div id="taskAdd" class="d-flex  justify-content-center ">
+                    <input type="text" placeholder="Enter the task..." id="taskInput" class="ps-2">
+                    <button class="px-4 py-2 btn bg-light " id="addTask">Add</button>
+                </div>
+                <div id="buttonSection" class="d-flex gap-2 gap-sm-5  mb-4 mt-3">
+                    <button class="px-4 py-2 btn allButton buttonQuery active" id="allButton">All</button>
+                    <button class="px-4 py-2 btn activeButton buttonQuery">Active</button>
+                    <button class="px-4 py-2 btn completedButton buttonQuery">Completed</button>
+                    <button class="px-4 py-2 btn clearButton buttonQuery text-nowrap ">Clear Completed</button>
+                </div>
+            </div>
+            <div id="taskList">
+
+            </div>
+        </div>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <script type="module" src="index.js"></script>
+</body>
+
+</html>
